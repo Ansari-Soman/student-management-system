@@ -33,16 +33,17 @@ Here is a preview of the Student Management System:
    cd student-management-system
 
 ## 📁 Folder Structure
+
 student-management-system/
-├── Demo.png           ← App preview image
-├── index.html         ← Main HTML file
-├── input.css          ← Tailwind source file (optional)
-├── output.css         ← Compiled Tailwind CSS file
-├── script.js          ← JavaScript logic
-├── package.json       ← NPM configuration
-├── package-lock.json  ← NPM lock file
-├── README.md          ← Project documentation
-└── node_modules/      ← Project dependencies
+├── Demo.png           # App preview image  
+├── index.html         # Main HTML file  
+├── input.css          # Tailwind source file (optional)  
+├── output.css         # Compiled Tailwind CSS file  
+├── script.js          # JavaScript logic  
+├── package.json       # NPM configuration  
+├── package-lock.json  # NPM lock file  
+├── README.md          # Project documentation  
+└── node_modules/      # Project dependencies  
 
 
 ## 🙌 Author
