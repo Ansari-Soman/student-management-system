@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ________________________________HEAD SECTION_________________________________ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            th,
+            td {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-br from-[#f5f7fa] to-[#c3cfe2] p-4 sm:p-8">
+
+    <!-- ____________________________________MAIN CONTAINER____________________________________ -->
+    <div class="w-full max-w-[950px] rounded-xl bg-white p-4 shadow-lg sm:p-8">
+        <h1 class="mb-8 text-center text-2xl font-bold text-indigo-700">Student Management System</h1>
+
+        <!-- ___________________________FORM SECTION - ADD NEW STUDENT__________________________ -->
+        <div class="mb-8 w-full rounded-lg bg-indigo-50 p-3 sm:p-6">
+            <h2 class="mb-4 text-xl font-semibold text-indigo-600">Add New Student</h2>
+            <div class="mb-6 flex flex-wrap gap-4">
+                <div class="form-group min-w-[200px] flex-1">
+                    <label for="name" class="mb-2 block text-[0.9rem] font-semibold text-[#444]">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter full name"
+                        class="w-full rounded-md border-2 border-gray-300 bg-white px-3 py-2 text-base shadow-lg focus:border-indigo-500 focus:outline-none focus:ring-indigo-500">
+                </div>
+                <div class="form-group min-w-[200px] flex-1">
+                    <label for="roll" class="mb-2 block text-[0.9rem] font-semibold text-[#444]">Roll Number</label>
+                    <input type="text" id="roll" placeholder="Enter roll no"
+                        class="w-full rounded-md border-2 border-gray-300 bg-white px-3 py-2 text-base shadow-lg focus:border-indigo-500 focus:outline-none focus:ring-indigo-500">
+                </div>
+                <div class="form-group min-w-[200px] flex-1">
+                    <label for="dep" class="mb-2 block text-[0.9rem] font-semibold text-[#444]">Department</label>
+                    <input type="text" id="dep" placeholder="Enter full name"
+                        class="w-full rounded-md border-2 border-gray-300 bg-white px-3 py-2 text-base shadow-lg focus:border-indigo-500 focus:outline-none focus:ring-indigo-500">
+                </div>
+            </div>
+            <button id="submit" onclick="submit()"
+                class="flex w-full grow items-center justify-center gap-2 rounded-md border-none bg-indigo-700 px-6 py-2 font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-indigo-800 sm:w-[100px] cursor-pointer">
+                <span id="submit-text">Submit</span>
+                <div class="text-lg">+</div>
+            </button>
+        </div>
+
+        <!-- ______________________________________TABLE SECTION______________________________________________ -->
+        <div class="table-container w-full overflow-x-auto rounded-lg border border-[#eee]">
+            <table class="w-full border-collapse">
+                <thead class="bg-[#3949ab] text-white">
+                    <tr>
+                        <th
+                            class="border-b border-[#eee] p-2 text-center text-[0.75rem] font-semibold uppercase tracking-wide sm:p-4 sm:text-[0.8rem]">
+                            ID</th>
+                        <th
+                            class="border-b border-[#eee] p-2 text-center text-[0.75rem] font-semibold uppercase tracking-wide sm:p-4 sm:text-[0.8rem]">
+                            Name</th>
+                        <th
+                            class="border-b border-[#eee] p-2 text-center text-[0.75rem] font-semibold uppercase tracking-wide sm:p-4 sm:text-[0.8rem]">
+                            Roll No</th>
+                        <th
+                            class="border-b border-[#eee] p-2 text-center text-[0.75rem] font-semibold uppercase tracking-wide sm:p-4 sm:text-[0.8rem]">
+                            Department</th>
+                        <th
+                            class="border-b border-[#eee] p-2 text-center text-[0.75rem] font-semibold uppercase tracking-wide sm:p-4 sm:text-[0.8rem]">
+                            Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="table">
+                    <!-- Data will be inserted here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ______________________________________SCRIPT SECTION______________________________________________ -->
+    <script src="script.js"></script>
+</body>
+
+</html>
